@@ -5,7 +5,10 @@
             "src":"src/main.ts",
             "use":"@vercel/node",
             "config": {
-                "includeFiles": ["src/**/*.ts"] 
+                "includeFiles":[
+                    "prisma/schema.prisma",
+                    "node_modules/.prisma/client/**"
+                ]
             } 
         }
     ],
